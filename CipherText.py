@@ -17,6 +17,10 @@ def encrypt_letters(message, key):
     return ("Your ciphertext is: " + ciphertext)
 
 # ask for input, then save
-# call the function
+message = input("Enter a message: ")
+key = input("Enter a key: ")
+
+# call the functions
+ciphertext = encrypt_letters(message, key)
 
 # create design
