@@ -26,6 +26,26 @@ ciphertext = encrypt_letters(message, key)
 # create design
 # turtle graphics for output
 # import module
+import turtle as t
+import colorsys
 # set up the screen
+wn = t.Screen()
+wn.bgcolor("black")
+wn.screensize(canvwidth=2000, canvheight=2000)
 # set up the pen
-# display the text
+t.tracer(1000)
+h = 0
+t.pensize(1)
+t.up()
+for i in range(500):
+  c = colorsys.hsv_to_rgb(h, 1, 1)
+  h += 0.008
+  t.pencolor(c)
+  t.lt(i)
+  t.fd(3)
+  t.fd(5)               
+  t.goto(-310, 100)      
+  t.down()
+  # display the text
+  t.write(ciphertext, font = ("Times New Roman", 20))
+  t.done
