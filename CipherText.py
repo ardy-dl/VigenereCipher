@@ -22,5 +22,5 @@ key = input("Enter a key: ")
 
 # call the functions
 ciphertext = encrypt_letters(message, key)
-
+print(ciphertext)
 # create design
